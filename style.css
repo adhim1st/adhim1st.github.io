@@ -1,0 +1,88 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: #1c2b2d;
+}
+
+.header {
+  padding: 0.1em;
+  text-align: center;
+  background: #99a8b2;
+  color: white;
+  font-size: 1.2em;
+}
+
+.game {
+  text-align: center;
+  color: white;
+  padding: 1em 1em 3em 1em;
+  margin: auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.info {
+  width: 20%;
+  margin: auto;
+  padding: 1em 1em;
+  border-bottom: 0.2em solid white;
+}
+#word {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.skor,
+.waktu {
+  font-size: 1.8em;
+}
+
+span {
+  font-size: 2em;
+}
+
+.instruksi {
+  background: #99a8b2;
+  width: 50%;
+  margin: auto;
+  padding: 1em 1em;
+  text-align: center;
+  color: white;
+}
+
+.inputword {
+  font-size: 2em;
+  border: 2px solid #1f6f8b;
+  padding: 0.2em 0.2em;
+  width: 20%;
+  margin: 0em 1em 0.5em 1em;
+}
+
+.buttonstart {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #1f6f8b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttonstart:hover {
+  background-color: #03455a;
+}
+
+.buttonstart:active {
+  background-color: #03455a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

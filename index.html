@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Typing Quest</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>JagoKetik</h1>
+      <p>Seberapa jago kamu ngetik ?</p>
+    </div>
+
+    <div class="game">
+      <div class="info">
+        <h2 class="skor">Score</h2>
+        <span id="score">0</span>
+        <h2 class="waktu">Time left</h2>
+        <span id="time">0</span>
+      </div>
+      <h2 id="word">kata</h2>
+      <input class="inputword" id="input_type" type="text" /><br />
+      <button class="buttonstart" id="startgame" onclick="gameStart()">
+        Start Game
+      </button>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <div class="instruksi">
+      <h2>Instruksi</h2>
+      <p>
+        Ketik kata pada kolom diatas sesuai dengan kata yang ditampilkan. Klik
+        tombol <strong>Game Start</strong> untuk memulai permainan. Klik tombol
+        <strong>Game Stop</strong> untuk menghentikan permainan.
+      </p>
+    </div>
+  </body>
+</html>
