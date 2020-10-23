@@ -38,10 +38,13 @@ const word = [
   "variable",
 ];
 
-function gameStart() {
-  let button = document.getElementById("startgame");
-  if (button.innerHTML === "Start Game") {
-    button.innerHTML = "Stop Game";
+function gameStart(data) {
+  let button = data.getAttribute("data-button");
+  let buttonbg = document.getElementById("startgame");
+  if (button == "startbutton") {
+    console.log(">>> masuk if");
+    data.setAttribute("data-button", "stopbutton");
+    buttonbg.innerHTML = "Stop Game";
     document.getElementById("input_type").disabled = false;
     document.getElementById("startgame").style.backgroundColor = "#e74c3c";
     displayWord(word);
@@ -49,9 +52,12 @@ function gameStart() {
     count = setInterval(countDown, 1000);
     stat = setInterval(gameStatus, 50);
   } else {
-    button.innerHTML = "Start Game";
+    console.log("!!! masuk else");
+    data.setAttribute("data-button", "startbutton");
+    buttonbg.innerHTML = "Start Game";
     document.getElementById("startgame").style.backgroundColor = "#27ae60";
-    init();
+    alert(`Selamat!! Score kamu ${score}, pilih OK untuk memulai kembali`);
+    window.location.reload();
   }
 }
 
