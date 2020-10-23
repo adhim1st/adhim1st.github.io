@@ -42,21 +42,24 @@ function gameStart() {
   let button = document.getElementById("startgame");
   if (button.innerHTML == "Start Game") {
     button.innerHTML = "Stop Game";
+    document.getElementById("input_type").disabled = false;
     displayWord(word);
     inputType.addEventListener("input", mulaiRonde);
     count = setInterval(countDown, 1000);
     stat = setInterval(gameStatus, 50);
   } else {
     button.innerHTML = "Start Game";
-    clearInterval(count, stat);
-    time = 30;
-    score = 0;
     init();
   }
 }
 
 function init() {
+  clearInterval(count, stat);
+  time = 30;
+  score = 0;
   timeDisplay.innerHTML = time;
+  scoreDisplay.innerHTML = score;
+  document.getElementById("input_type").disabled = true;
 }
 
 function mulaiRonde() {
