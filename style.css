@@ -1,8 +1,8 @@
-body,
-html {
+* {
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
+  overflow-y: hidden;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  padding: 0.1em;
+  padding: 0.5em;
   text-align: center;
   background: #99a8b2;
   color: white;
@@ -28,12 +28,17 @@ body {
 .info {
   width: 20%;
   margin: auto;
-  padding: 1em 1em;
+  padding: 1em 2em;
   border-bottom: 0.2em solid white;
+}
+
+.info h2 {
+  margin: 5px 5px;
 }
 #word {
   font-size: 3em;
   font-weight: bold;
+  margin: 0.8em 1em;
 }
 
 .skor,
@@ -49,16 +54,17 @@ span {
   background: #99a8b2;
   width: 50%;
   margin: auto;
-  padding: 1em 1em;
+  padding: 1.5em 1em;
   text-align: center;
   color: white;
+  border-radius: 1em;
 }
 
 .inputword {
   font-size: 2em;
   border: 2px solid #1f6f8b;
   padding: 0.2em 0.2em;
-  width: 20%;
+  width: 25%;
   margin: 0em 1em 0.5em 1em;
 }
 
@@ -71,18 +77,18 @@ span {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #1f6f8b;
+  background-color: #27ae60;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
 .buttonstart:hover {
-  background-color: #03455a;
+  background-color: #2ecc71;
 }
 
 .buttonstart:active {
-  background-color: #03455a;
+  background-color: #2ecc71;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }

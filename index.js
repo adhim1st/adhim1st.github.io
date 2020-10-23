@@ -40,15 +40,17 @@ const word = [
 
 function gameStart() {
   let button = document.getElementById("startgame");
-  if (button.innerHTML == "Start Game") {
+  if (button.innerHTML === "Start Game") {
     button.innerHTML = "Stop Game";
     document.getElementById("input_type").disabled = false;
+    document.getElementById("startgame").style.backgroundColor = "#e74c3c";
     displayWord(word);
     inputType.addEventListener("input", mulaiRonde);
     count = setInterval(countDown, 1000);
     stat = setInterval(gameStatus, 50);
   } else {
     button.innerHTML = "Start Game";
+    document.getElementById("startgame").style.backgroundColor = "#27ae60";
     init();
   }
 }
